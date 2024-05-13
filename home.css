@@ -1,4 +1,18 @@
-.image {
-    height: 100%;
-    width: 10%;
-}
+.flex-container {
+    display: flex;
+  }
+  
+  /* this selector selects all divs inside of .flex-container */
+  .flex-container div {
+    height: 100px;
+    flex: 1 1 0%;
+  }
+  
+  /* only div.two is selected here */
+  .flex-container .two {
+    flex: 2 1 0%;
+  }
+  .one img {
+    width:100%;
+    height:100vh;
+  }
