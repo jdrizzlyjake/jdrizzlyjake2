@@ -3,16 +3,38 @@
   }
   
   /* this selector selects all divs inside of .flex-container */
-  .flex-container div {
+.flex-container div {
+    height: 100vh;
+    flex: 1 1 0%;
+    background: rgb(228, 133, 49);
+  }
+  
+  /* only div.two is selected here */
+.flex-container .two {
+    flex: 2 1 0%;
+  }
+.image img {
+    width:100%;
+    height:100vh;
+  }
+  .flex-container {
+    display: flex;
+  }
+  
+  /* this selector selects all divs inside of .flex-container */
+.flex-container div {
+    background: peachpuff;
+    border: 4px solid brown;
     height: 100px;
     flex: 1 1 0%;
   }
   
   /* only div.two is selected here */
-  .flex-container .two {
-    flex: 2 1 0%;
+.flex-container .two {
+    flex: 3 1 0%;
   }
-  .one img {
-    width:100%;
-    height:100vh;
+  .logo img {
+    width:5%;
+    height:16vh;
+    padding-left: 5%;
   }
