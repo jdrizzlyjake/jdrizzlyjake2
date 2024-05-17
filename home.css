@@ -1,4 +1,4 @@
-.flex-container {
+.flex-container-one {
     display: flex;
   }
   
@@ -6,7 +6,6 @@
 .flex-container div {
     height: 100vh;
     flex: 1 1 0%;
-    background: rgb(228, 133, 49);
   }
   
   /* only div.two is selected here */
@@ -16,16 +15,20 @@
 .image img {
     width:100%;
     height:100vh;
+    z-index: 0;
   }
-  .flex-container {
+  .image {
+    width: 33vw;
+    position: absolute;
+    left: 0;
+  }
+  .flex-container-one {
     display: flex;
   }
   
   /* this selector selects all divs inside of .flex-container */
-.flex-container div {
-    background: peachpuff;
-    border: 4px solid brown;
-    height: 100px;
+.flex-container-one {
+    height: 100vh;
     flex: 1 1 0%;
   }
   
@@ -33,8 +36,28 @@
 .flex-container .two {
     flex: 3 1 0%;
   }
-  .logo img {
-    width:5%;
-    height:16vh;
-    padding-left: 5%;
+  .three {
+    background-color:rgba(0, 0, 0, .6);
+    width: 100%;
+  }
+  .three img {
+    width:13%;
+    height: auto;
+    position: relative;
+    left: 9vw;
+    top:1.5vh;
+  }
+  .flex-container-two {
+    position: relative;
+    top: 0;
+    left: -33vw;
+    display: flex;
+    flex-direction: column;
+    width:33%;
+  }
+  
+  /* this selector selects all divs inside of .flex-container */
+  .flex-container-two div {
+    height: 14vh;
+    flex: 1 1 auto;
   }
